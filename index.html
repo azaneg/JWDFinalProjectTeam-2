@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JWD Final Project Team 2</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <!-- this is the start of the header-->
+  <h1>This is a test it should show up before the jumbotron</h1>
+
+  <!-- this is the end of the header-->
+
+
+
+  <!-- Jumbotron Start -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h1 class="display-4">Daily Task Manager </h1>
+
+          <p class="lead">"Times flies and it’s up to you to be the navigator."</p>
+          <span>Robert Orben</span>
+          <div>
+
+            <button type="button" class="btn btn-info">Quote</button>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="Images/Jumbo.jpeg" class="float-end" />
+
+        </div </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jumbotron End -->
+
+
+  <!-- Input Form-->
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12" id="leftSide">
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="name" class="form-control" id="nameInput">
+      </div>
+      <div class="mb-3">
+        <label for="descriptionText" class="form-label">Description</label>
+        <textarea class="form-control" id="descriptionText" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="assignedToInput" class="form-label">Assigned To</label>
+        <input type="assinedTo" class="form-control" id="assignedToInput">
+      </div>
+      <div class="container">
+        <div class="row d-flex">
+          <div class="form-check pr-2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              To Do
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Urgent
+            </label>
+          </div>
+        </div>
+      </div>
+      <input class="btn btn-primary" type="submit" value="Submit">
+      <!-- Form End-->
+
+    </div>
+  </div>
+
+  <!-- Task Card Start -->
+  <div class="card" style="margin: 15px; background-color: #D7E5E5; rounded: 100px;">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h1 style="color: #3B4754; font-weight: bold;">Task Name</h1>
+          <i style="font-size: 12px;">Assigned to: {user-name}</i> <i style="font-size: 12px;">Due Date:
+            {system-date}</i>
+          <p style="color:#798DA3; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center flex-column">
+          <div class="row">
+            <button class="btn btn-md btn-light rounded-pill mb-3">Status</button>
+          </div>
+          <!-- Buttons Start -->
+          <div class="row">
+            <ul class="list-inline m-0">
+              <li class="list-inline-item">
+                <button class="btn btn-primary btn-md rounded-pill" type="button" data-toggle="tooltip"
+                  data-placement="top" title="Add"><b>Done</b></button>
+              </li>
+              <li class="list-inline-item">
+                <button class="btn btn-success btn-md rounded-pill" type="button" data-toggle="tooltip"
+                  data-placement="top" title="Edit"><b>Edit</b></button>
+              </li>
+              <li class="list-inline-item">
+                <button class="btn btn-danger btn-md rounded-pill" type="button" data-toggle="tooltip"
+                  data-placement="top" title="Delete"><b>Delete</b></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Buttons End -->
+
+    </div>
+  </div>
+
+
+  <!-- Task Card End -->
+
+
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    </div>
+  </div>
+  <!-- this is the start of the footer-->
+  <h1>This is the footer</h1>
+
+  <!-- this is the end of the footer-->
+
+
+
+
+
+
+</body>
+
+</html>
